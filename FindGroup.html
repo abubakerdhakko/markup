@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/ico-moon.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Groups</title>
+</head>
+
+<body>
+    <section class="top-bar">
+        <div class="left-side">
+            <div class="branding">
+                <img src="./img/dummy-logo.png" alt="" />
+            </div>
+
+        </div>
+        <div class="center-main-nav hide-tablet hide-mobile">
+            <a href="#" class="nav-link active">
+                <i class="icon-connections"></i>
+                <span>Connections</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="icon-groups"></i>
+                <span>Groups</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="icon-resources"></i>
+                <span>Resources</span>
+            </a>
+        </div>
+        <div class="right-side">
+            <div class="bell-holder">
+                <a href="#" class="notification-toggle">
+                    <i class="icon-bell">
+                        <span class="update-dot"></span>
+                    </i>
+                </a>
+            </div>
+            <div class="profile-widget">
+                <a href="#" class="profile-name">
+                    <img src="./img/profile-pic.jpeg" alt="" />
+                    <span>Andy</span>
+                    <i class="icon-arrow-down"></i>
+                </a>
+            </div>
+            <div class="logout">
+                <a href="#" class="logout-action">
+                    <i class="icon-logout"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container show-only-mobile">
+            <a href="#" class="back-nav blocked">
+                <i class="icon-arrow-right-round"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <section class="page-title-container container raw-flex space-between align-center">
+            <div class="raw-flex">
+                <a href="#" class="back-nav blocked mar-t-5 mar-r-50">
+                    <i class="icon-arrow-right-round"></i>
+                    <span>Back</span>
+                </a>
+
+            </div>
+
+            <a href="#" class="link-secondary accor-toggle-all show-only-mobile">Close All</a>
+        </section>
+        <section class="connections-wrapper container">
+
+            <div class="row accordion independant">
+                <div class="connections-column expand">
+                    <div class="connections-header accor-trigger">
+
+                        <div class="show-only-mobile">
+                            <i class="icon-arrow-right-round"></i>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                            <button type="submit" class="searchButton">
+                                <a class="">
+                                    <i class="fa fa-search colorSearch"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="map-canvas" class="mar-t-30 "></div>
+                    <div class="mar-t-30">
+                        <div class="raw-flex borderBottom pad-b-10">
+                            <div class="circular-loc">
+                                <a class="LocImg">
+                                    <img src="./img/locimg.png" />
+                                </a>
+                            </div>
+                            <div class="">
+                                <p class="mar-b-0 curLOcText">
+                                    Current Location
+                                </p>
+                            </div>
+                        </div>
+                        <div class="raw-flex borderBottom pad-b-10 pad-t-10">
+                            <div class="circular-loc">
+                                <a class="evntImg">
+                                    <img src="./img/evntType.png" />
+                                </a>
+                            </div>
+                            <div class="">
+                                <p class="mar-b-0 curLOcText">
+                                    Event Type
+                                </p>
+                            </div>
+                        </div>
+                        <div class="raw-flex borderBottom pad-b-10 pad-t-10">
+                            <div class="circular-loc">
+                                <a class="clockImg">
+                                    <img src="./img/clock.png" />
+                                </a>
+                            </div>
+                            <div class="">
+                                <p class="mar-b-0 curLOcText">
+                                    Meeting Time
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="connections-header accor-trigger border-top-none">
+                        <h5 class="connections-title">
+                            Popular Topics
+                            <!-- <span>(3)</span> -->
+                        </h5>
+                        <div class="show-only-mobile">
+                            <i class="icon-arrow-right-round"></i>
+                        </div>
+                    </div>
+                    <div class="raw-flex flexWrap">
+                        <div class="tagItem">
+                            <span class="tagText">
+                                Friendship
+                            </span>
+                        </div>
+                        <div class="tagItem">
+                            <span class="tagText">
+                                Networking
+                            </span>
+                        </div>
+                        <div class="tagItem">
+                            <span class="tagText">
+                                Godliness
+                            </span>
+                        </div>
+                        <div class="tagItem">
+                            <span class="tagText">
+                                The Human Experience
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="connections-column">
+                    <div class="connections-header accor-trigger">
+
+                        <div class="show-only-mobile">
+                            <i class="icon-arrow-right-round"></i>
+                        </div>
+                    </div>
+                    <div class="accor-content">
+                        <a href="./matches.html"
+                            class="single-connection single-connection-FindGroup-hover  raw-flex align-center">
+                            <img src="./img/sameGod.png" alt="" class="profile-img" />
+                            <span>Sam God's Crew</span>
+                        </a>
+                        <a href="#" class="single-connection single-connection-FindGroup-hover raw-flex align-center">
+                            <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                            <span>Dream Team</span>
+                        </a>
+                        <a href="#" class="single-connection single-connection-FindGroup-hover raw-flex align-center">
+                            <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                            <span>The Uncalled Four</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="connections-column">
+                    <div class="connections-header accor-trigger">
+
+                        <div class="show-only-mobile">
+                            <i class="icon-arrow-right-round"></i>
+                        </div>
+                    </div>
+                    <div class="accor-content">
+                        <div class="coverImg" style="background-image: url('./img/CoverImage.png');">
+                            <div class="bubbleImg" style="background-image: url('./img/profile-pic.jpeg');">
+                            </div>
+                        </div>
+
+                        <div class="text-center mainTextMargin">
+                            <h3 class="mainText">
+                                Same God's Crew
+                            </h3>
+                        </div>
+
+                        <div class="flex-center mar-t-5">
+                            <div class="flex-start">
+                                <div class="bborderMutPic">
+                                    <img src="./img/profilePic1.png" />
+                                </div>
+                                <div class="bborderMutPic">
+                                    <img src="./img/profilePic3.png" />
+                                </div>
+                                <div class="bborderMutPic">
+                                    <img src="./img/profilePic2.png" />
+                                </div>
+                            </div>
+                            <div class="txtMarMut">
+                                <p class="txtMut">
+                                    92 Members
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-center mar-t-20  ">
+                            <button type="button" class="btnJoin">Join</button>
+                        </div>
+
+                        <div class="mar-t-40 mar-r-20 mar-l-20">
+                            <div class="tab-frame">
+                                <input type="radio" checked name="tab" id="tab1">
+                                <label for="tab1">About</label>
+
+                                <input type="radio" name="tab" id="tab2">
+                                <label for="tab2">Media</label>
+
+                                <input type="radio" name="tab" id="tab3">
+                                <label for="tab3">Owner</label>
+
+                                <div class="tab tabText">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    1500s,
+                                    <p class="mar-t-10">
+                                        <span class="MeetingTxt">Meeting Time:</span> 1pm
+                                    </p>
+                                    <p class="mar-t-10 v-p">
+                                        View Page
+                                    </p>
+
+                                </div>
+                                <div class="tab tabText">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                    <p class="mar-t-10">
+                                        <span class="MeetingTxt">Meeting Time:</span> 2pm
+                                    </p>
+                                    <p class="mar-t-10 v-p">
+                                        View Page
+                                    </p>
+                                </div>
+                                <div class="tab tabText">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    <p class="mar-t-10">
+                                        <span class="MeetingTxt">Meeting Time:</span> 3pm
+                                    </p>
+                                    <p class="mar-t-10 v-p">
+                                        View Page
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="tri-nav hide-desktop">
+            <div class="nav-info-container">
+                <h4 class="card-title">Actions</h4>
+                <p class="card-info">
+                    Select the aenean eu leo quam. Pellentesque ornare sem
+                    lacinia quam venenatis vestiblum.
+                </p>
+            </div>
+            <div class="nav-links">
+                <a href="connections.html" class="nav-link active">
+                    <i class="icon-connections"></i>
+                    <span>Connections</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="icon-groups"></i>
+                    <span>Groups</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="icon-resources"></i>
+                    <span>Resources</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">
+            &copy; 2020 Think Native. inc, All Rights Reserved
+        </p>
+        <p>
+            Need Suppport? Fill out a support ticket!
+            <a href="#" class="bordered-btn">Help</a>
+        </p>
+    </footer>
+    <section class="notification-widget hide">
+        <div class="notify-wrapper">
+            <div class="notify-header">
+                <h5>Notfications</h5>
+                <a href="#" class="close-notify"><i class="icon-close"></i></a>
+            </div>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-msg"></i>
+                    <span>Messages</span>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-calender"></i>
+                    <span>Events</span>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-tasks"></i>
+                    <span>Tasks</span>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="control-panel">
+        <div class="backdrop"></div>
+        <div class="control-panel-wrapper">
+            <div class="select-company-wrapper mar-b-10">
+                <p class="mar-b-5">Select Company</p>
+                <div class="custom-select">
+                    <span class="custom-selected">Add Note</span>
+                    <ul class="custom-options">
+                        <li class="c-option c-selected">
+                            <a href="#">Company A</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company B</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company C</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company D</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company E</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company F</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company G</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="role-toggle-wrapper">
+                <p class="mar-b-5">Choose active Role</p>
+                <div class="role-toggle-container">
+                    <input name="role" type="radio" checked href="#" class="member" value="member" />
+                    <input name="role" type="radio" href="#" class="champion" value="champion" />
+                </div>
+            </div>
+            <a href="#" class="toggle-panel">
+                <i class="icon-close"></i>
+                <i class="icon-gear"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Bottom Js Area -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>
