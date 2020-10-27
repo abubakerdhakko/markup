@@ -1,27 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/ico-moon.css" />
-        <link rel="stylesheet" href="./css/slick.css" />
-        <link rel="stylesheet" href="./css/slick-theme.css" />
-        <title>Dashboard</title>
-    </head>
-    <body>
-        <section class="top-bar">
-            <div class="left-side">
-                <div class="branding">
-                    <img src="./img/dummy-logo.png" alt="" />
-                </div>
-                <a href="connections.html" class="back-nav show-only-desktop">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/ico-moon.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <section class="top-bar">
+        <div class="left-side">
+            <div class="branding">
+                <img src="./img/dummy-logo.png" alt="" />
+            </div>
+            <a href="connections.html" class="back-nav show-only-desktop">
+                <i class="icon-arrow-right-round"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center-main-nav hide-tablet hide-mobile">
+            <a href="#" class="nav-link active">
+                <i class="icon-connections"></i>
+                <span>Connections</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="icon-groups"></i>
+                <span>Groups</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="icon-resources"></i>
+                <span>Resources</span>
+            </a>
+        </div>
+        <div class="right-side">
+            <div class="bell-holder">
+                <a href="#" class="notification-toggle">
+                    <i class="icon-bell">
+                        <span class="update-dot"></span>
+                    </i>
+                </a>
+            </div>
+            <div class="profile-widget">
+                <a href="#" class="profile-name">
+                    <img src="./img/profile-pic.jpeg" alt="" />
+                    <span>Andy</span>
+                    <i class="icon-arrow-down"></i>
+                </a>
+            </div>
+            <div class="logout">
+                <a href="#" class="logout-action">
+                    <i class="icon-logout"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="profile-page">
+        <section class="profile-header">
+            <div class="flex-100 show-only-mobile space-between mar-b-10 pad-24-23-12">
+                <a href="#" class="back-nav">
                     <i class="icon-arrow-right-round"></i>
                     <span>Back</span>
                 </a>
+                <span class="badge primary">Champion</span>
             </div>
-            <div class="center-main-nav hide-tablet hide-mobile">
-                <a href="#" class="nav-link active">
+            <div class="container">
+                <img class="profile-img biggest" src="./img/profile-pic.jpeg" alt="" />
+                <h5 class="user-name">Sam Smith</h5>
+                <span class="badge primary">Champion</span>
+                <a href="#" class="danger-btn">Disconnect</a>
+            </div>
+        </section>
+        <section class="profile-content">
+            <div class="container">
+                <div class="left-col">
+                    <h6 class="col-title">Actions</h6>
+                    <a href="./emails.html" class="action-wrapper">
+                        <i class="icon-msg"></i>
+                        <span class="action-title">Email</span>
+                        <i class="icon-arrow-right-round"></i>
+                    </a>
+                    <a href="#" class="action-wrapper">
+                        <i class="icon-notes"></i>
+                        <span class="action-title">Notes</span>
+                        <i class="icon-arrow-right-round"></i>
+                    </a>
+                    <a href="#" class="action-wrapper">
+                        <i class="icon-tasks"></i>
+                        <span class="action-title">Tasks</span>
+                        <i class="icon-arrow-right-round"></i>
+                    </a>
+                    <a href="#" class="action-wrapper">
+                        <i class="icon-calender"></i>
+                        <span class="action-title">Events</span>
+                        <i class="icon-arrow-right-round"></i>
+                    </a>
+                </div>
+                <div class="mid-col">
+                    <div class="tab-header show-only-mobile">
+                        <a href="#" class="tab active">About</a>
+                        <a href="#" class="tab">Videos</a>
+                    </div>
+                    <div class="user-info-wrapper">
+                        <h5 class="user-name">About Sam</h5>
+                        <p class="user-details">
+                            <span class="single">
+                                <span class="bolder">Gender:</span>
+                                <span>Male</span>
+                            </span>
+                            <span class="single">
+                                <span class="bolder">Age:</span>
+                                <span>32 yrs</span>
+                            </span>
+                            <span class="single">
+                                <span class="bolder">Zip Code:</span>
+                                <span>53594</span>
+                            </span>
+                        </p>
+                        <p class="about-user">
+                            Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Ex adipisci iure molestias
+                            sapiente magni aperiam in cum maxime consectetur
+                            quidem est voluptatum sint rem fuga voluptatem
+                            neque voluptatibus reiciendis eligendi facilis,
+                            quam nesciunt. Porro aliquam voluptatem
+                            voluptates asperiores placeat nobis facilis
+                            fugiat, amet fugit iure quas maxime quisquam
+                            molestiae consectetur exercitationem eos
+                            eligendi iste pariatur sunt quod nulla dolores!
+                            Distinctio dolor odit ipsum asperiores deserunt
+                            cum voluptatibus voluptates iusto nemo delectus!
+                            Fugiat molestiae inventore fugit praesentium
+                            temporibus! Tempore ducimus accusantium velit
+                            maiores harum enim ut omnis, temporibus ullam
+                            cumque, architecto molestias, magni labore optio
+                            qui. Dolore eius maiores corrupti perspiciatis.
+                        </p>
+                        <a href="#" class="link-secondary blocked">Continue Reading</a>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <h6 class="col-title">Videos</h6>
+                    <a href="#" class="video-wrapper">
+                        <img src="./img/img_forest.jpg" alt="" />
+                        <i class="icon-play"></i>
+                    </a>
+                    <a href="#" class="video-wrapper">
+                        <img src="./img/img_forest.jpg" alt="" />
+                        <i class="icon-play"></i>
+                    </a>
+                    <a href="#" class="video-wrapper">
+                        <img src="./img/img_forest.jpg" alt="" />
+                        <i class="icon-play"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="tri-nav hide-desktop">
+            <div class="nav-info-container">
+                <h4 class="card-title">Actions</h4>
+                <p class="card-info">
+                    Select the aenean eu leo quam. Pellentesque ornare sem
+                    lacinia quam venenatis vestiblum.
+                </p>
+            </div>
+            <div class="nav-links">
+                <a href="connections.html" class="nav-link active">
                     <i class="icon-connections"></i>
                     <span>Connections</span>
                 </a>
@@ -34,355 +183,163 @@
                     <span>Resources</span>
                 </a>
             </div>
-            <div class="right-side">
-                <div class="bell-holder">
-                    <a href="#" class="notification-toggle">
-                        <i class="icon-bell">
-                            <span class="update-dot"></span>
-                        </i>
-                    </a>
-                </div>
-                <div class="profile-widget">
-                    <a href="#" class="profile-name">
-                        <img src="./img/profile-pic.jpeg" alt="" />
-                        <span>Andy</span>
-                        <i class="icon-arrow-down"></i>
-                    </a>
-                </div>
-                <div class="logout">
-                    <a href="#" class="logout-action">
-                        <i class="icon-logout"></i>
-                    </a>
-                </div>
-            </div>
         </section>
+    </div>
 
-        <div class="profile-page">
-            <section class="profile-header">
-                <div
-                    class="flex-100 show-only-mobile space-between mar-b-10 pad-24-23-12"
-                >
-                    <a href="#" class="back-nav">
-                        <i class="icon-arrow-right-round"></i>
-                        <span>Back</span>
-                    </a>
-                    <span class="badge primary">Champion</span>
+    <footer>
+        <p class="copyright">
+            &copy; 2020 Think Native. inc, All Rights Reserved
+        </p>
+        <p>
+            Need Suppport? Fill out a support ticket!
+            <a href="#" class="bordered-btn">Help</a>
+        </p>
+    </footer>
+    <section class="notification-widget hide">
+        <div class="notify-wrapper">
+            <div class="notify-header">
+                <h5>Notfications</h5>
+                <a href="#" class="close-notify"><i class="icon-close"></i></a>
+            </div>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-msg"></i>
+                    <span>Messages</span>
                 </div>
-                <div class="container">
-                    <img
-                        class="profile-img biggest"
-                        src="./img/profile-pic.jpeg"
-                        alt=""
-                    />
-                    <h5 class="user-name">Sam Smith</h5>
-                    <span class="badge primary">Champion</span>
-                    <a href="#" class="danger-btn">Disconnect</a>
-                </div>
-            </section>
-            <section class="profile-content">
-                <div class="container">
+                <div class="single-notfication">
                     <div class="left-col">
-                        <h6 class="col-title">Actions</h6>
-                        <a href="./emails.html" class="action-wrapper">
-                            <i class="icon-msg"></i>
-                            <span class="action-title">Email</span>
-                            <i class="icon-arrow-right-round"></i>
-                        </a>
-                        <a href="#" class="action-wrapper">
-                            <i class="icon-notes"></i>
-                            <span class="action-title">Notes</span>
-                            <i class="icon-arrow-right-round"></i>
-                        </a>
-                        <a href="#" class="action-wrapper">
-                            <i class="icon-tasks"></i>
-                            <span class="action-title">Tasks</span>
-                            <i class="icon-arrow-right-round"></i>
-                        </a>
-                        <a href="#" class="action-wrapper">
-                            <i class="icon-calender"></i>
-                            <span class="action-title">Events</span>
-                            <i class="icon-arrow-right-round"></i>
-                        </a>
-                    </div>
-                    <div class="mid-col">
-                        <div class="tab-header show-only-mobile">
-                            <a href="#" class="tab active">About</a>
-                            <a href="#" class="tab">Videos</a>
-                        </div>
-                        <div class="user-info-wrapper">
-                            <h5 class="user-name">About Sam</h5>
-                            <p class="user-details">
-                                <span class="single">
-                                    <span class="bolder">Gender:</span>
-                                    <span>Male</span>
-                                </span>
-                                <span class="single">
-                                    <span class="bolder">Age:</span>
-                                    <span>32 yrs</span>
-                                </span>
-                                <span class="single">
-                                    <span class="bolder">Zip Code:</span>
-                                    <span>53594</span>
-                                </span>
-                            </p>
-                            <p class="about-user">
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Ex adipisci iure molestias
-                                sapiente magni aperiam in cum maxime consectetur
-                                quidem est voluptatum sint rem fuga voluptatem
-                                neque voluptatibus reiciendis eligendi facilis,
-                                quam nesciunt. Porro aliquam voluptatem
-                                voluptates asperiores placeat nobis facilis
-                                fugiat, amet fugit iure quas maxime quisquam
-                                molestiae consectetur exercitationem eos
-                                eligendi iste pariatur sunt quod nulla dolores!
-                                Distinctio dolor odit ipsum asperiores deserunt
-                                cum voluptatibus voluptates iusto nemo delectus!
-                                Fugiat molestiae inventore fugit praesentium
-                                temporibus! Tempore ducimus accusantium velit
-                                maiores harum enim ut omnis, temporibus ullam
-                                cumque, architecto molestias, magni labore optio
-                                qui. Dolore eius maiores corrupti perspiciatis.
-                            </p>
-                            <a href="#" class="link-secondary blocked"
-                                >Continue Reading</a
-                            >
-                        </div>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
                     </div>
                     <div class="right-col">
-                        <h6 class="col-title">Videos</h6>
-                        <a href="#" class="video-wrapper">
-                            <img src="./img/img_forest.jpg" alt="" />
-                            <i class="icon-play"></i>
-                        </a>
-                        <a href="#" class="video-wrapper">
-                            <img src="./img/img_forest.jpg" alt="" />
-                            <i class="icon-play"></i>
-                        </a>
-                        <a href="#" class="video-wrapper">
-                            <img src="./img/img_forest.jpg" alt="" />
-                            <i class="icon-play"></i>
-                        </a>
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
                     </div>
                 </div>
-            </section>
-            <section class="tri-nav hide-desktop">
-                <div class="nav-info-container">
-                    <h4 class="card-title">Actions</h4>
-                    <p class="card-info">
-                        Select the aenean eu leo quam. Pellentesque ornare sem
-                        lacinia quam venenatis vestiblum.
-                    </p>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
                 </div>
-                <div class="nav-links">
-                    <a href="connections.html" class="nav-link active">
-                        <i class="icon-connections"></i>
-                        <span>Connections</span>
-                    </a>
-                    <a href="#" class="nav-link">
-                        <i class="icon-groups"></i>
-                        <span>Groups</span>
-                    </a>
-                    <a href="#" class="nav-link">
-                        <i class="icon-resources"></i>
-                        <span>Resources</span>
-                    </a>
+            </div>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-calender"></i>
+                    <span>Events</span>
                 </div>
-            </section>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-tasks"></i>
+                    <span>Tasks</span>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <div class="control-panel">
+        <div class="backdrop"></div>
+        <div class="control-panel-wrapper">
+            <div class="select-company-wrapper mar-b-10">
+                <p class="mar-b-5">Select Company</p>
+                <div class="custom-select">
+                    <span class="custom-selected">Add Note</span>
+                    <ul class="custom-options">
+                        <li class="c-option c-selected">
+                            <a href="#">Company A</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company B</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company C</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company D</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company E</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company F</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company G</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="role-toggle-wrapper">
+                <p class="mar-b-5">Choose active Role</p>
+                <div class="role-toggle-container">
+                    <input name="role" type="radio" checked href="#" class="member" value="member" />
+                    <input name="role" type="radio" href="#" class="champion" value="champion" />
+                </div>
+            </div>
+            <a href="#" class="toggle-panel">
+                <i class="icon-close"></i>
+                <i class="icon-gear"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Bottom Js Area -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
 
-        <footer>
-            <p class="copyright">
-                &copy; 2020 Think Native. inc, All Rights Reserved
-            </p>
-            <p>
-                Need Suppport? Fill out a support ticket!
-                <a href="#" class="bordered-btn">Help</a>
-            </p>
-        </footer>
-        <section class="notification-widget hide">
-            <div class="notify-wrapper">
-                <div class="notify-header">
-                    <h5>Notfications</h5>
-                    <a href="#" class="close-notify"
-                        ><i class="icon-close"></i
-                    ></a>
-                </div>
-                <div class="notification-group">
-                    <div class="noti-group-header">
-                        <i class="icon-msg"></i>
-                        <span>Messages</span>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="notification-group">
-                    <div class="noti-group-header">
-                        <i class="icon-calender"></i>
-                        <span>Events</span>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="notification-group">
-                    <div class="noti-group-header">
-                        <i class="icon-tasks"></i>
-                        <span>Tasks</span>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="control-panel">
-            <div class="backdrop"></div>
-            <div class="control-panel-wrapper">
-                <div class="select-company-wrapper mar-b-10">
-                    <p class="mar-b-5">Select Company</p>
-                    <div class="custom-select">
-                        <span class="custom-selected">Add Note</span>
-                        <ul class="custom-options">
-                            <li class="c-option c-selected">
-                                <a href="#">Company A</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company B</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company C</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company D</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company E</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company F</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company G</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="role-toggle-wrapper">
-                    <p class="mar-b-5">Choose active Role</p>
-                    <div class="role-toggle-container">
-                        <input
-                            name="role"
-                            type="radio"
-                            checked
-                            href="#"
-                            class="member"
-                            value="member"
-                        />
-                        <input
-                            name="role"
-                            type="radio"
-                            href="#"
-                            class="champion"
-                            value="champion"
-                        />
-                    </div>
-                </div>
-                <a href="#" class="toggle-panel">
-                    <i class="icon-close"></i>
-                    <i class="icon-gear"></i>
-                </a>
-            </div>
-        </div>
-        <!-- Bottom Js Area -->
-        <script src="./js/jquery-3.5.1.js"></script>
-        <script src="./js/slick.min.js"></script>
-        <script src="./js/main.js"></script>
-    </body>
 </html>

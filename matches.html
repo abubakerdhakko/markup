@@ -1,27 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/ico-moon.css" />
-        <link rel="stylesheet" href="./css/slick.css" />
-        <link rel="stylesheet" href="./css/slick-theme.css" />
-        <title>Dashboard</title>
-    </head>
-    <body>
-        <section class="top-bar">
-            <div class="left-side">
-                <div class="branding">
-                    <img src="./img/dummy-logo.png" alt="" />
-                </div>
-                <a href="./connections.html" class="back-nav show-only-desktop">
-                    <i class="icon-arrow-right-round"></i>
-                    <span>Back</span>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/ico-moon.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <section class="top-bar">
+        <div class="left-side">
+            <div class="branding">
+                <img src="./img/dummy-logo.png" alt="" />
+            </div>
+            <a href="./connections.html" class="back-nav show-only-desktop">
+                <i class="icon-arrow-right-round"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center-main-nav hide-tablet hide-mobile">
+            <a href="#" class="nav-link active">
+                <i class="icon-connections"></i>
+                <span>Connections</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="icon-groups"></i>
+                <span>Groups</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="icon-resources"></i>
+                <span>Resources</span>
+            </a>
+        </div>
+        <div class="right-side">
+            <div class="bell-holder">
+                <a href="#" class="notification-toggle">
+                    <i class="icon-bell">
+                        <span class="update-dot"></span>
+                    </i>
                 </a>
             </div>
-            <div class="center-main-nav hide-tablet hide-mobile">
-                <a href="#" class="nav-link active">
+            <div class="profile-widget">
+                <a href="#" class="profile-name">
+                    <img src="./img/profile-pic.jpeg" alt="" />
+                    <span>Andy</span>
+                    <i class="icon-arrow-down"></i>
+                </a>
+            </div>
+            <div class="logout">
+                <a href="#" class="logout-action">
+                    <i class="icon-logout"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container show-only-mobile mar-t-10">
+            <a href="#" class="back-nav blocked">
+                <i class="icon-arrow-right-round"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <section class="page-title-container container">
+            <h2 class="page-title">Matches</h2>
+        </section>
+        <section class="container matches-container">
+            <div class="matches-col">
+                <a href="#" class="single-connection raw-flex align-center active">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-success">98% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-success">98% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-success">98% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-caution">75% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-caution">65% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-caution">55% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-danger">40% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-danger">30% Match</span>
+                </a>
+                <a href="#" class="single-connection raw-flex align-center">
+                    <img src="./img/profile-pic.jpeg" alt="" class="profile-img" />
+                    <span>Sam Smith</span>
+                    <span class="text-danger">25% Match</span>
+                </a>
+            </div>
+            <div class="match-info-col">
+                <div class="match-header">
+                    <img class="profile-img big" src="./img/profile-pic.jpeg" alt="" />
+                    <h5 class="match-name">Tiania Curtis</h5>
+                    <span class="text-success show-only-mobile flex-100 text-center">98% Match</span>
+                    <a href="#" class="secondary-btn wider">Connect</a>
+                </div>
+                <div class="tabs-wrapper">
+                    <div class="tab-header">
+                        <a href="#" class="tab active">About</a>
+                        <a href="#" class="tab">Videos</a>
+                    </div>
+                    <div class="tab-content-wrapper">
+                        <div class="single-tab-content">
+                            <p class="match-detail">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Numquam ipsum magnam ea
+                                reprehenderit quasi ducimus dolores odit
+                                perspiciatis fugit quisquam saepe similique
+                                eos voluptas excepturi consequuntur atque a
+                                voluptatum in accusantium est adipisci
+                                suscipit, doloribus vitae! Praesentium quia
+                                porro rerum consequuntur similique possimus
+                                sapiente, quisquam est placeat pariatur
+                                iusto deleniti tempora provident! Eveniet
+                                quis optio architecto harum consequatur eum
+                                est a! Voluptate dolor autem perferendis
+                                deserunt velit incidunt facilis! Alias,
+                                dolore consequuntur. Assumenda doloremque
+                                neque obcaecati natus sint tenetur mollitia
+                                expedita? Quae tempore sapiente neque quis a
+                                quia eligendi deserunt fugiat adipisci?
+                                Iusto animi expedita quae, corrupti nisi
+                                saepe laborum a omnis laboriosam similique
+                                ducimus. Reprehenderit labore at corporis
+                                dolores repellendus eius consectetur nihil
+                                ullam unde harum, soluta nobis reiciendis.
+                            </p>
+                            <p class="match-detail">
+                                <span class="bolder dark">Gender:</span>
+                                <span>Female</span>
+                            </p>
+                            <p class="match-detail">
+                                <span class="bolder dark">Age:</span>
+                                <span>32</span>
+                            </p>
+                            <p class="match-detail">
+                                <span class="bolder dark">Gender:</span>
+                                <span>33177</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tri-nav hide-desktop">
+            <div class="nav-info-container">
+                <h4 class="card-title">Actions</h4>
+                <p class="card-info">
+                    Select the aenean eu leo quam. Pellentesque ornare sem
+                    lacinia quam venenatis vestiblum.
+                </p>
+            </div>
+            <div class="nav-links">
+                <a href="connections.html" class="nav-link active">
                     <i class="icon-connections"></i>
                     <span>Connections</span>
                 </a>
@@ -34,405 +195,163 @@
                     <span>Resources</span>
                 </a>
             </div>
-            <div class="right-side">
-                <div class="bell-holder">
-                    <a href="#" class="notification-toggle">
-                        <i class="icon-bell">
-                            <span class="update-dot"></span>
-                        </i>
-                    </a>
-                </div>
-                <div class="profile-widget">
-                    <a href="#" class="profile-name">
-                        <img src="./img/profile-pic.jpeg" alt="" />
-                        <span>Andy</span>
-                        <i class="icon-arrow-down"></i>
-                    </a>
-                </div>
-                <div class="logout">
-                    <a href="#" class="logout-action">
-                        <i class="icon-logout"></i>
-                    </a>
-                </div>
-            </div>
         </section>
+    </main>
 
-        <main>
-            <div class="container show-only-mobile mar-t-10">
-                <a href="#" class="back-nav blocked">
-                    <i class="icon-arrow-right-round"></i>
-                    <span>Back</span>
-                </a>
+    <footer>
+        <p class="copyright">
+            &copy; 2020 Think Native. inc, All Rights Reserved
+        </p>
+        <p>
+            Need Suppport? Fill out a support ticket!
+            <a href="#" class="bordered-btn">Help</a>
+        </p>
+    </footer>
+    <section class="notification-widget hide">
+        <div class="notify-wrapper">
+            <div class="notify-header">
+                <h5>Notfications</h5>
+                <a href="#" class="close-notify"><i class="icon-close"></i></a>
             </div>
-            <section class="page-title-container container">
-                <h2 class="page-title">Matches</h2>
-            </section>
-            <section class="container matches-container">
-                <div class="matches-col">
-                    <a
-                        href="#"
-                        class="single-connection raw-flex align-center active"
-                    >
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-success">98% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-success">98% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-success">98% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-caution">75% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-caution">65% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-caution">55% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-danger">40% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-danger">30% Match</span>
-                    </a>
-                    <a href="#" class="single-connection raw-flex align-center">
-                        <img
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                            class="profile-img"
-                        />
-                        <span>Sam Smith</span>
-                        <span class="text-danger">25% Match</span>
-                    </a>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-msg"></i>
+                    <span>Messages</span>
                 </div>
-                <div class="match-info-col">
-                    <div class="match-header">
-                        <img
-                            class="profile-img big"
-                            src="./img/profile-pic.jpeg"
-                            alt=""
-                        />
-                        <h5 class="match-name">Tiania Curtis</h5>
-                        <span
-                            class="text-success show-only-mobile flex-100 text-center"
-                            >98% Match</span
-                        >
-                        <a href="#" class="secondary-btn wider">Connect</a>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
                     </div>
-                    <div class="tabs-wrapper">
-                        <div class="tab-header">
-                            <a href="#" class="tab active">About</a>
-                            <a href="#" class="tab">Videos</a>
-                        </div>
-                        <div class="tab-content-wrapper">
-                            <div class="single-tab-content">
-                                <p class="match-detail">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Numquam ipsum magnam ea
-                                    reprehenderit quasi ducimus dolores odit
-                                    perspiciatis fugit quisquam saepe similique
-                                    eos voluptas excepturi consequuntur atque a
-                                    voluptatum in accusantium est adipisci
-                                    suscipit, doloribus vitae! Praesentium quia
-                                    porro rerum consequuntur similique possimus
-                                    sapiente, quisquam est placeat pariatur
-                                    iusto deleniti tempora provident! Eveniet
-                                    quis optio architecto harum consequatur eum
-                                    est a! Voluptate dolor autem perferendis
-                                    deserunt velit incidunt facilis! Alias,
-                                    dolore consequuntur. Assumenda doloremque
-                                    neque obcaecati natus sint tenetur mollitia
-                                    expedita? Quae tempore sapiente neque quis a
-                                    quia eligendi deserunt fugiat adipisci?
-                                    Iusto animi expedita quae, corrupti nisi
-                                    saepe laborum a omnis laboriosam similique
-                                    ducimus. Reprehenderit labore at corporis
-                                    dolores repellendus eius consectetur nihil
-                                    ullam unde harum, soluta nobis reiciendis.
-                                </p>
-                                <p class="match-detail">
-                                    <span class="bolder dark">Gender:</span>
-                                    <span>Female</span>
-                                </p>
-                                <p class="match-detail">
-                                    <span class="bolder dark">Age:</span>
-                                    <span>32</span>
-                                </p>
-                                <p class="match-detail">
-                                    <span class="bolder dark">Gender:</span>
-                                    <span>33177</span>
-                                </p>
-                            </div>
-                        </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
                     </div>
                 </div>
-            </section>
-            <section class="tri-nav hide-desktop">
-                <div class="nav-info-container">
-                    <h4 class="card-title">Actions</h4>
-                    <p class="card-info">
-                        Select the aenean eu leo quam. Pellentesque ornare sem
-                        lacinia quam venenatis vestiblum.
-                    </p>
-                </div>
-                <div class="nav-links">
-                    <a href="connections.html" class="nav-link active">
-                        <i class="icon-connections"></i>
-                        <span>Connections</span>
-                    </a>
-                    <a href="#" class="nav-link">
-                        <i class="icon-groups"></i>
-                        <span>Groups</span>
-                    </a>
-                    <a href="#" class="nav-link">
-                        <i class="icon-resources"></i>
-                        <span>Resources</span>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p class="copyright">
-                &copy; 2020 Think Native. inc, All Rights Reserved
-            </p>
-            <p>
-                Need Suppport? Fill out a support ticket!
-                <a href="#" class="bordered-btn">Help</a>
-            </p>
-        </footer>
-        <section class="notification-widget hide">
-            <div class="notify-wrapper">
-                <div class="notify-header">
-                    <h5>Notfications</h5>
-                    <a href="#" class="close-notify"
-                        ><i class="icon-close"></i
-                    ></a>
-                </div>
-                <div class="notification-group">
-                    <div class="noti-group-header">
-                        <i class="icon-msg"></i>
-                        <span>Messages</span>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
                     </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="notification-group">
-                    <div class="noti-group-header">
-                        <i class="icon-calender"></i>
-                        <span>Events</span>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="notification-group">
-                    <div class="noti-group-header">
-                        <i class="icon-tasks"></i>
-                        <span>Tasks</span>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <i class="icon-msg notify-type"></i>
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
-                    </div>
-                    <div class="single-notfication">
-                        <div class="left-col">
-                            <img
-                                src="./img/profile-pic.jpeg"
-                                alt=""
-                                class="user-img"
-                            />
-                        </div>
-                        <div class="right-col">
-                            <span class="user-name">Philip Baptista</span>
-                            <span class="notify-info">sent you a message</span>
-                            <span class="module-name">New Think Native</span>
-                            <span class="time-stamp blocked">Now</span>
-                        </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="control-panel">
-            <div class="backdrop"></div>
-            <div class="control-panel-wrapper">
-                <div class="select-company-wrapper mar-b-10">
-                    <p class="mar-b-5">Select Company</p>
-                    <div class="custom-select">
-                        <span class="custom-selected">Add Note</span>
-                        <ul class="custom-options">
-                            <li class="c-option c-selected">
-                                <a href="#">Company A</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company B</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company C</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company D</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company E</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company F</a>
-                            </li>
-                            <li class="c-option">
-                                <a href="#">Company G</a>
-                            </li>
-                        </ul>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-calender"></i>
+                    <span>Events</span>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
                     </div>
                 </div>
-                <div class="role-toggle-wrapper">
-                    <p class="mar-b-5">Choose active Role</p>
-                    <div class="role-toggle-container">
-                        <input
-                            name="role"
-                            type="radio"
-                            checked
-                            href="#"
-                            class="member"
-                            value="member"
-                        />
-                        <input
-                            name="role"
-                            type="radio"
-                            href="#"
-                            class="champion"
-                            value="champion"
-                        />
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
                     </div>
                 </div>
-                <a href="#" class="toggle-panel">
-                    <i class="icon-close"></i>
-                    <i class="icon-gear"></i>
-                </a>
+            </div>
+            <div class="notification-group">
+                <div class="noti-group-header">
+                    <i class="icon-tasks"></i>
+                    <span>Tasks</span>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <i class="icon-msg notify-type"></i>
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
+                <div class="single-notfication">
+                    <div class="left-col">
+                        <img src="./img/profile-pic.jpeg" alt="" class="user-img" />
+                    </div>
+                    <div class="right-col">
+                        <span class="user-name">Philip Baptista</span>
+                        <span class="notify-info">sent you a message</span>
+                        <span class="module-name">New Think Native</span>
+                        <span class="time-stamp blocked">Now</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Bottom Js Area -->
-        <script src="./js/jquery-3.5.1.js"></script>
-        <script src="./js/slick.min.js"></script>
-        <script src="./js/main.js"></script>
-    </body>
+    </section>
+    <div class="control-panel">
+        <div class="backdrop"></div>
+        <div class="control-panel-wrapper">
+            <div class="select-company-wrapper mar-b-10">
+                <p class="mar-b-5">Select Company</p>
+                <div class="custom-select">
+                    <span class="custom-selected">Add Note</span>
+                    <ul class="custom-options">
+                        <li class="c-option c-selected">
+                            <a href="#">Company A</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company B</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company C</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company D</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company E</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company F</a>
+                        </li>
+                        <li class="c-option">
+                            <a href="#">Company G</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="role-toggle-wrapper">
+                <p class="mar-b-5">Choose active Role</p>
+                <div class="role-toggle-container">
+                    <input name="role" type="radio" checked href="#" class="member" value="member" />
+                    <input name="role" type="radio" href="#" class="champion" value="champion" />
+                </div>
+            </div>
+            <a href="#" class="toggle-panel">
+                <i class="icon-close"></i>
+                <i class="icon-gear"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Bottom Js Area -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
 </html>

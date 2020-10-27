@@ -1,0 +1,402 @@
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #eff2f5;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: #eff2f5;
+  color: #9dbfaf;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #eff2f5;
+  background: #eff2f5;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0px 10px 0px 0px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.circular-loc {
+  width: 50px;
+  height: 50px;
+  background-color: #eff2f5;
+  border-radius: 100px;
+  position: relative;
+}
+a.LocImg {
+  position: absolute;
+  top: 8px;
+  left: 11px;
+}
+
+a.evntImg {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+
+a.clockImg {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+.curLOcText {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.border-top-none {
+  border-top: none !important;
+}
+.borderBottom {
+  border-bottom: 1px solid #eff2f5;
+}
+.borderTop {
+  border-top: 1px solid #eff2f5;
+}
+.tagItem {
+  background-color: #eff2f5;
+  margin: 10px;
+  padding: 10px 15px;
+  white-space: nowrap;
+  border-radius: 25px;
+  color: #2d78be;
+}
+.tagItem {
+  background-color: #eff2f5;
+  margin: 10px 10px 0px 0px;
+  padding: 10px 15px;
+  white-space: nowrap;
+  border-radius: 25px;
+  color: #2d78be;
+}
+.single-connection-FindGroup-hover {
+  padding: 15px 20px;
+}
+.single-connection-FindGroup-hover:hover {
+  background-color: #eff2f5;
+}
+.bborderMutPic img {
+  border-radius: 100px;
+  border: solid 2px #fff;
+  /* margin-left: 0px; */
+}
+.bborderMutPic {
+  margin-left: -10px;
+}
+.coverImg {
+  background-size: cover;
+  height: 180px;
+  border-radius: 15px;
+  position: relative;
+}
+.mainTextMargin {
+  margin-top: 20%;
+}
+.bubbleImg {
+  background-size: cover;
+  height: 100px;
+  border-radius: 100px;
+  width: 100px;
+  position: absolute;
+  left: 127px;
+  top: 125px;
+  border: solid 2px #fff;
+}
+.mainText {
+  font-size: 28px;
+}
+.txtMut {
+  color: #a3a3a3;
+  /* padding-top: 17px; */
+}
+.txtMarMut {
+  margin-top: 5px;
+  padding-left: 2px;
+}
+div#map-canvas {
+  height: 300px;
+  width: 100%;
+}
+div#map-canvas {
+  height: 300px;
+  width: 100%;
+  margin-top: 70px;
+  margin-left: 8px;
+}
+.mar-t-20 {
+  margin-top: 20px;
+}
+
+element.style {
+}
+button.btnJoin {
+  background-color: #2d78be;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 6px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* tabs */
+div.tab-frame input {
+  display: none;
+}
+div.tab-frame label {
+  display: block;
+  float: left;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #2d78be;
+  opacity: 0.8;
+}
+div.tab-frame input:checked + label {
+  /* background: black; */
+  color: #2d78be;
+  cursor: default;
+  border-top: solid 2px #2d78be;
+  font-weight: 600;
+}
+div.tab-frame div.tab {
+  display: none;
+  padding: 5px 10px;
+  clear: left;
+}
+
+div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3),
+div.tab-frame input:nth-of-type(4):checked ~ .tab:nth-of-type(4) {
+  display: block;
+}
+.tab.tabText {
+  color: #333333;
+  font-size: 16px;
+}
+span.MeetingTxt {
+  font-weight: 600;
+}
+.v-p {
+  color: #2982bb;
+  font-weight: 600;
+  /* margin-top: 16px; */
+}
+h5.findGrp {
+  font-size: 22px;
+  font-weight: 900;
+  margin-left: 50px;
+  white-space: nowrap;
+}
+#main-container {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.chapter {
+  position: relative;
+  height: 1200px;
+  z-index: 1;
+}
+
+#chapter1 {
+  /* background-image: url("../img/mainbanner.png"); */
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.page-title-Cover {
+  padding: 27px 0 45px;
+}
+.cover {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 15px;
+}
+.cover > img {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  margin-top: -50%;
+}
+
+.coverImgBanner {
+  background-size: cover;
+  height: 248px;
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.bubbleImgBanner {
+  background-size: cover;
+  height: 100px;
+  border-radius: 100px;
+  width: 100px;
+  position: absolute;
+  left: 127px;
+  top: 195px;
+  border: solid 2px #fff;
+}
+
+.mainnbubbleImgBanner {
+  background-size: cover;
+  height: 100px;
+  border-radius: 100px;
+  width: 100px;
+  position: relative;
+  top: -25px;
+  border: solid 2px #fff;
+}
+.mar-main-sec-cover {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.userNamecover {
+  margin-left: 2rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  font-size: 25px;
+}
+.mar-t-mob-2rem {
+  margin-top: 2.2rem;
+}
+button.btnMainPage {
+  background-color: #2982bb;
+  border: none;
+  color: #fff;
+  width: 160px;
+  padding: 6px;
+  border-radius: 5px;
+}
+.tagcover {
+  margin-left: 14rem;
+}
+.mar-t-tabs-2rem {
+  margin-top: 2rem;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  /* background-color: #f1f1f1; */
+  margin-top: 2rem;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #2982bb;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: transparent;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+  background-color: transparent;
+  border-top: solid 2px #2982bb;
+  color: #2982bb;
+  font-weight: 600;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  /* padding: 6px 12px; */
+  /* border: 1px solid #ccc; */
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {
+  color: red;
+}
+.paddingMain {
+  padding: 2.5rem 7rem;
+}
+
+@media (max-width: 800px) {
+  .mar-main-sec-cover {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .userNamecover {
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 25px;
+  }
+  .ml-mob-2rem {
+    margin-left: 2rem;
+  }
+  .mar-t-mob-2rem {
+    margin-top: 0.2rem;
+  }
+  button.btnMainPage {
+    background-color: #2982bb;
+    border: none;
+    color: #fff;
+    width: 160px;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  .tagcover {
+    margin-left: 1rem;
+  }
+}
