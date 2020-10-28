@@ -2457,6 +2457,15 @@ img {
 .pad-l-30 {
   padding-left: 30px;
 }
+.pad-l-10 {
+  padding-left: 10px;
+}
+.pad-l-20 {
+  padding-left: 20px;
+}
+.pad-t-20 {
+  padding-top: 20px;
+}
 
 .pad-0 {
   padding: 0;
