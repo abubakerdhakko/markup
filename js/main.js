@@ -207,3 +207,32 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+$(".TagSliderClass").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  variableWidth: true,
+  prevArrow: false,
+  nextArrow: false,
+});
+$(".eventSlider").slick({
+  dots: false,
+  infinite: true,
+  autoplay: true,
+  speed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  variableWidth: true,
+});
+
+// $(".TagSliderClass").slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 1,
+//   centerMode: true,
+//   variableWidth: true,
+// });

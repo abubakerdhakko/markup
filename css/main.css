@@ -2271,17 +2271,7 @@ img {
 .width-auto {
   width: auto;
 }
-.flexWrap {
-  flex-wrap: wrap;
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-.flex-start {
-  display: flex;
-  justify-content: start;
-}
+
 .flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
